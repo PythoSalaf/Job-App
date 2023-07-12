@@ -1,3 +1,8 @@
 export { default as Navbar } from '../Components/Navbar/Navbar'
 export { default as Footer } from '../Components/Footer/Footer'
+export { default as Hero } from '../Components/Hero/Hero'
+export { default as Offer } from '../Components/Offer/Offer'
+export { default as Steps } from '../Components/Steps/Steps'
 export { default as ErrorPage} from '../Components/ErrorPage/ErrorPage'
+export { default as Card1 } from '../Components/Cards/Card1/Card1'
+export { default as Card2 } from '../Components/Cards/Card2/Card2'
