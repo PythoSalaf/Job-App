@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardTwo = styled.div`
-  width: 380px;
+  width: 260px;
   background: var(--Primary-color);
   transition: 1s ease-in-out;
   clip-path: polygon(
@@ -19,9 +19,9 @@ export const CardTwo = styled.div`
   align-items: center;
 
   .cardtwo-avatar {
-    margin: 2rem 0 1.5rem;
-    width: 80px;
-    height: 80px;
+    margin: 1.5rem 0 1rem;
+    width: 50px;
+    height: 50px;
     background-color: var(--White-color);
     display: flex;
     align-items: center;
@@ -30,12 +30,12 @@ export const CardTwo = styled.div`
   }
 
   .cardtwo-avatar img {
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
   }
 
   .cartwo-content {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,48 +43,51 @@ export const CardTwo = styled.div`
   }
 
   .card-job-title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 1rem 0 0.5rem;
+    margin: 0.8rem 0 0.6rem;
     text-align: center;
     color: var(--White-color);
     text-transform: capitalize;
   }
 
   .job-company {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: var(--White-color);
     text-align: center;
     text-transform: capitalize;
   }
 
   .cardtwo-data-container {
-    margin: 3rem 0 1.5rem;
+    margin: 1.6rem 0 1.5rem;
+    width: 100%;
   }
 
   .data-amount,
   .data-location {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin: 1.5rem 0;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 1rem 0;
     color: var(--White-color);
   }
 
   .data-amount,
   .data-location p {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
   }
 
   .card2-btn-container {
-    margin: 2.5rem 0 2.5rem;
+    margin: 2rem 0 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   .heart {
@@ -93,13 +96,13 @@ export const CardTwo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.9rem;
+    padding: 0.6rem;
   }
 
   .card2-apply-btn {
-    padding: 0.9rem 1.8rem;
-    font-size: 20px;
-    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+    font-weight: 500;
     background-color: var(--White-color);
     color: var(--Primary-color);
     border: none;
@@ -112,11 +115,21 @@ export const CardTwo = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: 1.3rem 0;
-    width: 320px;
     
+    .cardtwo-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardtwo-avatar img {
+    width: 70%;
+    height: 70%;
+  }
+
+
   .data-amount,
   .data-location p {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .card2-btn-container {
@@ -129,7 +142,7 @@ export const CardTwo = styled.div`
 
   .card2-apply-btn {
     padding: 0.7rem 1.5rem;
-    font-size: 18px;
+    font-size: 14px;
   }
 
 

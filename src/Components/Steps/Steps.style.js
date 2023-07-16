@@ -13,22 +13,22 @@ export const StepContainer = styled.section`
   }
 
   .step-top h4 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--Primary-color);
   }
 
   .step-top h2 {
-    margin: 2rem 0;
-    font-size: 32px;
+    margin: 1.5rem 0;
+    font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
   }
 
   .step-top p {
-    font-size: 23px;
+    font-size: 19px;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 30px;
   }
 
   .step-middle {
@@ -63,7 +63,7 @@ export const StepContainer = styled.section`
   }
 
 .step-bottom-tittle {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 3rem;
     text-transform: capitalize;
@@ -78,7 +78,7 @@ export const StepContainer = styled.section`
 
   .always-avatar {
     width: 65px;
-    height: 65px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,14 +87,14 @@ export const StepContainer = styled.section`
   }
 
   .always-content h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 38px;
     text-transform: capitalize;
   }
 
   .always-content p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -113,13 +113,34 @@ export const StepContainer = styled.section`
   }
 
   .step-bottom-tittle {
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
 }
 
+.step-top h4 {
+    font-size: 21px;
+  }
+
+  .step-top h2 {
+    font-size: 27px;
+  }
+
+  .step-top p {
+    font-size: 16px;
+  }
+
 
 .always-content h3 {
-    font-size: 23px;
+    font-size: 20px;
+  }
+
+.always-content p {
+    font-size: 14px;
+  }
+
+  .always-avatar {
+    width: 55px;
+    height: 50px;
   }
 
 
@@ -130,6 +151,33 @@ export const StepContainer = styled.section`
     .step-data {
     justify-content: center;
   }
+
+  .step-top h4 {
+    font-size: 20px;
+  }
+
+  .step-top h2 {
+    font-size: 23px;
+  }
+
+  .step-top p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .always-content h3 {
+    font-size: 18px;
+  }
+
+.always-content p {
+    font-size: 12px;
+  }
+
+  .always-avatar {
+    width: 50px;
+    height: 45px;
+  }
+
 }
 
 `;

@@ -9,7 +9,7 @@ const Offer = () => {
       <section className="offer-top">
         <div className="offer-top-left">
           <h2 className="top-left-title">
-            500<span>+</span> companies posted there jobs here
+            500 <span>plus</span> companies posted there jobs here
           </h2>
           <p className="top-left-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.

@@ -62,9 +62,9 @@ const Navbar = () => {
           <div className="mobile-nav-right" onClick={handleToggle}>
             <h3>Menu</h3>
             {toggle ? (
-              <VscChromeClose color="#fff" size={28} />
+              <VscChromeClose color="#fff" size={22} />
             ) : (
-              <VscThreeBars color="#fff" size={28} />
+              <VscThreeBars color="#fff" size={22} />
             )}
           </div>
         </div>

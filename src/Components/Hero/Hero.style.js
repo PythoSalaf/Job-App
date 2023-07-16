@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.section`
   width: 100%;
-  margin: 4rem 0 3rem;
+  margin: 1rem 0 2rem;
 
   .hero {
     width: 100%;
@@ -12,17 +12,17 @@ export const HeroContainer = styled.section`
   }
 
   .hero-left {
-    width: 70%;
+    width: 55%;
   }
 
  
 
   .hero-title {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
-    line-height: 60px;
-    margin: 0 0 3rem;
+    line-height: 50px;
+    margin: 0 0 1rem;
   }
 
   .hero-title span {
@@ -30,17 +30,17 @@ export const HeroContainer = styled.section`
   }
 
   .hero-text {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 500;
     margin: 0 0 3.5rem;
     line-height: 40px;
   }
 
   .hero-content {
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
     padding: 2rem 1.5rem;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -49,17 +49,19 @@ export const HeroContainer = styled.section`
   .hero-field-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    width: 50%;
   }
 
   .hero-icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     color: var(--Primary-color);
   }
 
   .hero-input {
     height: 35px;
+    width: 100%;
     border: 1px solid var(--Primary-color);
     outline: none;
     padding: 0 0 0 8px;
@@ -70,8 +72,8 @@ export const HeroContainer = styled.section`
   }
 
   .hero-btn {
-    padding: 10px 25px;
-    font-size: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
     font-weight: 500;
     background-color: var(--Primary-color);
     color: var(--White-color);
@@ -104,7 +106,6 @@ export const HeroContainer = styled.section`
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
-        /* flex-flow: column-reverse; */
     }
 
     .hero-left, .hero-right {
@@ -128,11 +129,20 @@ export const HeroContainer = styled.section`
     }
 
     .hero-title {
-    font-size: 34px;
+    font-size: 28px;
     line-height: 50px;
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
+  }
+  
+  .hero-input {
+    font-size: 14px;
+    font-weight: 500;
   }
 
+  .hero-btn {
+    padding: 7px 18px;
+    font-size: 14px;
+  }
 
   .hero-text {
     font-size: 23px;
@@ -142,15 +152,38 @@ export const HeroContainer = styled.section`
 
 @media screen and (max-width: 425px) {
     .hero-title {
-    font-size: 26px;
-    line-height: 45px;
+    font-size: 23px;
+    line-height: 36px;
     margin: 0 0 2rem;
+    text-align: center;
   }
 
+  
+  .hero-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hero-field-icon {
+      margin: 0 0 1rem;
+      width: 90%;
+    }
+
+    .hero-input {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 70%;
+  }
 
   .hero-text {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
   }
 }
 

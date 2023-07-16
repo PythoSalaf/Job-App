@@ -15,7 +15,7 @@ export const FooterContainer = styled.section`
 
   .footer-top-left {
     width: 60%;
-    height: 3px;
+    height: 2px;
     background-color: var(--Primary-color);
     border-radius: 20px;
   }
@@ -28,7 +28,7 @@ export const FooterContainer = styled.section`
   }
 
   .top-middle-title {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--Primary-color);
     line-height: 40px;
@@ -39,7 +39,7 @@ export const FooterContainer = styled.section`
 
   .footer-top-right {
     width: 60%;
-    height: 3px;
+    height: 2px;
     background-color: var(--Primary-color);
     border-radius: 20px;
   }
@@ -63,12 +63,12 @@ export const FooterContainer = styled.section`
     text-decoration: none;
     color: var(--Primary-color);
     margin: 0.3rem 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
   }
 
   .middle-icons {
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,8 +83,8 @@ export const FooterContainer = styled.section`
   }
 
   .social-icon {
-    width: 80px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
     color: var(--Primary-color);
     cursor: pointer;
   }
@@ -92,7 +92,7 @@ export const FooterContainer = styled.section`
   .middle-line {
     margin: 3rem 0 1rem;
     width: 2px;
-    height: 150px;
+    height: 105px;
     background-color: var(--Primary-color);
   }
 
@@ -107,7 +107,7 @@ export const FooterContainer = styled.section`
     text-decoration: none;
     color: var(--Primary-color);
     margin: 0.3rem 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
   }
 
@@ -121,14 +121,14 @@ export const FooterContainer = styled.section`
 
   .sub-title {
     color: var(--Primary-color);
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 0 2rem;
   }
 
   .sub-field {
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,19 +138,19 @@ export const FooterContainer = styled.section`
 
   .sub-field input {
     margin: 0 0 2rem;
-    height: 50px;
+    height: 45px;
     width: 40%;
     padding: 0 0 0 15px;
     border: 1px solid var(--Primary-color);
     outline: none;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .sub-btn {
-    padding: 1rem 2rem;
-    font-size: 20px;
-    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
     background-color: var(--Primary-color);
     border: none;
     border-radius: 10px;
@@ -164,24 +164,24 @@ export const FooterContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0 0;
+    margin: 3rem 0 0;
     color: var(--Primary-color);
   }
 
   .footer-content-title {
-    margin: 0 0 1.5rem;
-    font-size: 28px;
+    margin: 0 0 1rem;
+    font-size: 22px;
     font-weight: 600;
     line-height: 35px;
   }
 
   .footer-content-title span {
     color: black;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .footer-content-text {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 500;
     margin: 0 0 1rem;
   }
@@ -246,16 +246,16 @@ export const FooterContainer = styled.section`
     }
 
     .footer-content-title {
-      font-size: 25px;
+      font-size: 20px;
       margin: 0 0 1rem;
     }
 
     .footer-content-title span {
-      font-size: 26px;
+      font-size: 23px;
     }
 
     .footer-content-text {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
 
@@ -265,12 +265,12 @@ export const FooterContainer = styled.section`
     }
 
     .top-middle-title {
-      font-size: 30px;
+      font-size: 27px;
     }
 
 
     .middle-left a {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .middle-icons {
@@ -282,24 +282,33 @@ export const FooterContainer = styled.section`
     }
 
     .middle-icons-container {
-      gap: 15px;
+      gap: 12px;
     }
 
     .social-icon {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
     }
 
     .middle-right .middle-left {
       width: 40%;
     }
 
+    .middle-line {
+      margin: 2rem 0 0.5rem;
+    }
+
+    .middle-line {
+    margin: 3rem 0 0.2rem;
+    height: 95px;
+  }
+
     .middle-right a {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .sub-title {
-      font-size: 25px;
+      font-size: 22px;
     }
 
     .sub-field {
@@ -311,7 +320,7 @@ export const FooterContainer = styled.section`
     }
 
     .footer-content-title {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .footer-content-title span {
@@ -354,7 +363,7 @@ export const FooterContainer = styled.section`
     }
 
     .sub-title {
-      font-size: 24px;
+      font-size: 20px;
     }
 
     .sub-field {
@@ -363,13 +372,14 @@ export const FooterContainer = styled.section`
 
     .sub-field input {
       width: 90%;
-      font-size: 18px;
+      height: 40px;
+      font-size: 16px;
       color: black;
     }
 
     .sub-btn {
-    padding: 0.8rem 1.6rem;
-    font-size: 18px;
+    padding: 0.6rem 1.4rem;
+    font-size: 14px;
   }
 
     .footer-content-title {

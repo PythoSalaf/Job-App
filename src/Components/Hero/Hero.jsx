@@ -17,7 +17,7 @@ const Hero = () => {
             Across various industries
           </h2>
           <p className="hero-text">
-            Showcase your skills and expertise with a dynamic profile <br />{" "}
+            Showcase your skills and expertise with a dynamic profile{" "}
             that captures the attention of hiring managers
           </p>
           <div className="hero-content">

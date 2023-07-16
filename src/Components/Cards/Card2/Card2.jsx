@@ -15,17 +15,17 @@ const Card2 = ( {avatar, job, company, salary, location, } ) => {
 
         <div className="cardtwo-data-container">
           <div className="data-amount">
-            <ImLocation2 size={33} color="#fff" />
+            <ImLocation2 size={26} color="#fff" />
             <p>${salary?.toLocaleString()} /Month</p>
           </div>
           <div className="data-location">
-            <ImLocation2 size={33} color="#fff" />
+            <ImLocation2 size={26} color="#fff" />
             <p>{location}</p>
           </div>
         </div>
         <div className="card2-btn-container">
           <div className="heart">
-            <AiFillHeart size={30} color="#408bdc" />
+            <AiFillHeart size={20} color="#408bdc" />
           </div>
           <button className="card2-apply-btn">Apply Now</button>
         </div>

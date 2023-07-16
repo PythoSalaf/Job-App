@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Card = styled.section`
   .card1-container {
-    width: 300px;
-    height: 384px;
+    width: 220px;
+    height: 304px;
     background: var(--Primary-color);
     position: relative;
     display: flex;
@@ -58,8 +58,8 @@ export const Card = styled.section`
 
   .card1-icon-container {
     background-color: var(--White-color);
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     place-items: center;
@@ -67,8 +67,8 @@ export const Card = styled.section`
   }
 
   svg {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
   }
 
   .card1-icon {
@@ -80,16 +80,17 @@ export const Card = styled.section`
 
   .card1-title {
     margin: 3rem 0 2rem;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
   }
 
   .card1-content {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    /* font-weight: 500; */
     line-height: 30px;
     text-transform: capitalize;
     text-align: center;
+    padding: 0 0.2rem;
   }
 `;

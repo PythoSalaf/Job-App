@@ -24,8 +24,8 @@ export const NavbarContainer = styled.section`
     gap: 20px;
   }
   .logo-container {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -38,7 +38,7 @@ export const NavbarContainer = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 700;
   }
 
@@ -53,7 +53,7 @@ export const NavbarContainer = styled.section`
   }
 
   .logo-title {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration: none;
     color: var(--Primary-color);
@@ -71,7 +71,7 @@ export const NavbarContainer = styled.section`
   .desktop-links {
     text-decoration: none;
     margin: 0 1.5rem;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     transition: all 0.3s ease-in-out;
@@ -82,9 +82,9 @@ export const NavbarContainer = styled.section`
   }
 
   .navbar-btn {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
-    padding: 1rem 1.8rem;
+    padding: 0.6rem 1.4rem;
     border: none;
     background-color: var(--Primary-color);
     color: var(--White-color);
@@ -133,8 +133,9 @@ export const NavbarContainer = styled.section`
 }
 
 .mobile-nav-right h3 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
+  user-select: none;
   color: var(--White-color);
   cursor: pointer;
   text-transform: uppercase;
@@ -157,7 +158,7 @@ export const NavbarContainer = styled.section`
 
 .mobile-links {
   margin: 2rem 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   color: var(--White-color);
@@ -174,12 +175,12 @@ export const NavbarContainer = styled.section`
     }
 
     .logo-container {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
     }
 
     .logo-title {
-      font-size: 26px;
+      font-size: 23px;
     }
 
     .logo-circle {
@@ -192,8 +193,8 @@ export const NavbarContainer = styled.section`
     }
 
     .navbar-btn {
-      font-size: 18px;
-      padding: 0.8rem 1rem;
+      font-size: 17px;
+      padding: 0.6rem 0.9rem;
     }
   }
 
