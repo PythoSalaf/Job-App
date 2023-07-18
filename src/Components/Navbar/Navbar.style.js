@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.section`
   width: 100%;
-  height: 90px;
+  height: 15vh;
   background-color: var(--White-color);
   color: red;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  position : fixed;
+  top: 0;
+  z-index:7;
   .desktop-navbar {
     width: 96%;
     margin: 0 auto;
