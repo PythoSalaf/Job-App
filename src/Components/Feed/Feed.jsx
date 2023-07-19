@@ -1,6 +1,7 @@
 import React from "react";
 import { FeedContainer } from "./Feed.style";
 import { feed } from "../../Assets";
+import { TestimonialCard } from "../../Components";
 
 const Feed = () => {
   return (
@@ -27,8 +28,13 @@ const Feed = () => {
         <div className="feed-two-top">
           <h2 className="feed-two-title">What a job holder says about us</h2>
           <p className="feed-two-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing <br/> elit. Ut modi corrupti illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Ut
+            modi corrupti illo.
           </p>
+        </div>
+
+        <div className="feed-two-bnott">
+          <TestimonialCard />
         </div>
       </section>
     </FeedContainer>
