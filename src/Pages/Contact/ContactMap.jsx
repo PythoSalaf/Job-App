@@ -7,6 +7,7 @@ export const ContactMap = () => {
       <iframe className="gmap_canvas"
         src="https://maps.google.com/maps?q=Ikeja lagos&t=&z=10&ie=UTF8&iwloc=&output=embed" 
         frameborder="0"
+        title="companyMap"
       >
       </iframe>
     </Section>

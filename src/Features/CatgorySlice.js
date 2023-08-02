@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 // import api from "../Api/api";
 import axios from "axios";
-import { API_ID, API_BASE_URL, API_KEY } from "../Api/api";
+// import { API_ID, API_BASE_URL, API_KEY } from "../Api/api";
 
 const initialState = {
   status: "idle",
