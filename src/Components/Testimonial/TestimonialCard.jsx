@@ -1,24 +1,25 @@
 import React from "react";
 import { Testimonial } from "./TestimonialCard.style";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { Star } from "../../Components";
+import { avater } from "../../Assets";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ name, company, review }) => {
   return (
     <Testimonial>
-      <div className="test-card-top"></div>
+      <div className="test-card-top">
+        <img src={avater} alt="test-aater" />
+      </div>
       <div className="test-card-bottom">
         <div className="test-card-content">
           <div className="test-card-content-top">
-            <h3 className="">Name Here</h3>
-            <h4 className="">Company Here</h4>
-            <div className="star-here">star here</div>
+            <h3 className="content-name">{name}</h3>
+            <h4 className="content-company">{company}</h4>
+            <Star />
           </div>
-          <p>
-            <FaQuoteLeft />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus
-            eveniet reiciendis vero repudiandae accusantium nesci?
-            <FaQuoteRight />
-          </p>
+          <FaQuoteLeft className="qoute-left" size={25} />
+          <p className="content--text">{review}</p>
+          <FaQuoteRight className="qoute-right" size={25} />
         </div>
       </div>
     </Testimonial>

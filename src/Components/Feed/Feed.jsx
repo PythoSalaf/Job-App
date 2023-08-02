@@ -1,7 +1,7 @@
 import React from "react";
 import { FeedContainer } from "./Feed.style";
 import { feed } from "../../Assets";
-import { TestimonialCard } from "../../Components";
+import { Swipper } from "../../Components";
 
 const Feed = () => {
   return (
@@ -17,8 +17,8 @@ const Feed = () => {
             Over 10,000+ people registered <br /> in our website
           </h2>
           <p className="feed-one-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br /> Error, sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            sunt?
           </p>
           <button className="feed-one-btn">explore more</button>
         </div>
@@ -33,8 +33,8 @@ const Feed = () => {
           </p>
         </div>
 
-        <div className="feed-two-bnott">
-          <TestimonialCard />
+        <div className="feed-two-bottom">
+          <Swipper />
         </div>
       </section>
     </FeedContainer>
