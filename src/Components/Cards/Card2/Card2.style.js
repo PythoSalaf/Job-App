@@ -110,42 +110,35 @@ export const CardTwo = styled.div`
     cursor: pointer;
   }
 
-
-
-
   @media screen and (max-width: 768px) {
     margin: 1.3rem 0;
-    
+
     .cardtwo-avatar {
-    width: 50px;
-    height: 50px;
-  }
+      width: 50px;
+      height: 50px;
+    }
 
-  .cardtwo-avatar img {
-    width: 70%;
-    height: 70%;
-  }
+    .cardtwo-avatar img {
+      width: 70%;
+      height: 70%;
+    }
 
+    .data-amount,
+    .data-location p {
+      font-size: 15px;
+    }
 
-  .data-amount,
-  .data-location p {
-    font-size: 15px;
-  }
+    .card2-btn-container {
+      gap: 20px;
+    }
 
-  .card2-btn-container {
-    gap: 20px;
-  }
+    .heart {
+      padding: 0.7rem;
+    }
 
-  .heart {
-    padding: 0.7rem;
-  }
-
-  .card2-apply-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 14px;
-  }
-
-
-  
+    .card2-apply-btn {
+      padding: 0.7rem 1.5rem;
+      font-size: 14px;
+    }
   }
 `;

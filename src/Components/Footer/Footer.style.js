@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.section`
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 2rem 0 0;
 
   .footer-top {
@@ -268,7 +269,6 @@ export const FooterContainer = styled.section`
       font-size: 27px;
     }
 
-
     .middle-left a {
       font-size: 16px;
     }
@@ -299,9 +299,9 @@ export const FooterContainer = styled.section`
     }
 
     .middle-line {
-    margin: 3rem 0 0.2rem;
-    height: 95px;
-  }
+      margin: 3rem 0 0.2rem;
+      height: 95px;
+    }
 
     .middle-right a {
       font-size: 16px;
@@ -333,13 +333,9 @@ export const FooterContainer = styled.section`
   }
 
   @media screen and (max-width: 425px) {
-   
-
     .top-middle-title {
       font-size: 28px;
     }
-
-
 
     .middle-icons {
       width: 80%;
@@ -378,9 +374,9 @@ export const FooterContainer = styled.section`
     }
 
     .sub-btn {
-    padding: 0.6rem 1.4rem;
-    font-size: 14px;
-  }
+      padding: 0.6rem 1.4rem;
+      font-size: 14px;
+    }
 
     .footer-content-title {
       font-size: 14px;

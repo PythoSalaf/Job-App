@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { JobAlertContainer } from "./JobAlert.style";
 import { JobAlertData } from "../DummyData";
 
 const JobAlert = () => {
+  const navigate = useNavigate();
   return (
     <JobAlertContainer>
       <div className="alert-top-content">
@@ -28,7 +30,9 @@ const JobAlert = () => {
       </div>
 
       <div className="job-alert-btn-container">
-        <button className="alert-btns">browse all jobs</button>
+        <button className="alert-btns" onClick={() => navigate("find-a-job")}>
+          browse all jobs
+        </button>
       </div>
     </JobAlertContainer>
   );

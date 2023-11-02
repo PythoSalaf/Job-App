@@ -141,6 +141,11 @@ export const OfferContainer = styled.section`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .offer-data-one {
+    margin: 0 1rem 1rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -154,10 +159,9 @@ export const OfferContainer = styled.section`
     }
 
     .bottom-top-title {
-    font-size: 24px;
-    line-height: 35px;
-    
-  }
+      font-size: 24px;
+      line-height: 35px;
+    }
 
     .offer-top-left {
       width: 98%;
@@ -200,24 +204,28 @@ export const OfferContainer = styled.section`
     }
 
     .bottom-top-btn {
-    width: 100%;
-    gap: 30px;
-    margin: 2rem 0 1.5rem;
-    padding: 1.4rem 0;
+      width: 100%;
+      gap: 30px;
+      margin: 2rem 0 1.5rem;
+      padding: 1.4rem 0;
+    }
+
+    .part-time-btn {
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .full-time-btn {
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 
-  
-  .part-time-btn {
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .full-time-btn {
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
+  @media screen and (max-width: 425px) {
+    .offer-data-one {
+      margin: 0;
+    }
   }
 `;

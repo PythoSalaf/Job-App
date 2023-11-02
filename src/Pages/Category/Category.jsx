@@ -2,21 +2,19 @@ import React, { useEffect } from "react";
 import { CategoryContainer } from "./Category.style";
 import { TopCategoryData } from "../../Components/DummyData";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchCategory } from "../../Features/CatgorySlice";
+import { fetchApi } from "../../Features/ApiSlice";
 
 const Category = () => {
   const dispatch = useDispatch();
-  const category = useSelector((state) => state.category);
+  const apiData = useSelector((state) => state.api.apiData);
+  const Category = apiData.jobs;
+  console.log("Big Category", Category);
 
   useEffect(() => {
-    dispatch(fetchCategory());
+    dispatch(fetchApi());
   }, [dispatch]);
 
-  useEffect(() => {
-    console.log("Return Data", category);
-  }, [category]);
-
-  console.log("category", category);
+  console.log("category", apiData.jobs);
   return (
     <CategoryContainer>
       <div className="category-hero"></div>

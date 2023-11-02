@@ -26,13 +26,13 @@ export const JobAlertContainer = styled.section`
   }
 
   .alert-top-main {
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-content: center;
     place-items: center;
     margin: 0 auto;
-    gap: 20px;
+    gap: 40px 20px;
   }
 
   .item-icon {
@@ -53,7 +53,7 @@ export const JobAlertContainer = styled.section`
 
   .alert-top-container {
     background-color: var(--White-color);
-    width: 350px;
+    width: 300px;
     display: flex;
     align-items: flex-start;
     padding: 2rem 1rem;
@@ -156,6 +156,10 @@ export const JobAlertContainer = styled.section`
       grid-template-columns: repeat(2, 1fr);
       margin: 0 auto;
       gap: 20px;
+    }
+    .alert-top-container {
+      width: 100%;
+      gap: 30px;
     }
 
     .alert-btns {
