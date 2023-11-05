@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navbar, ErrorPage, Footer } from "./Components";
-import { About, Home, Jobs, Contact, Category } from "./Pages";
+import { About, Home, Jobs, Contact, Category, JobDetail } from "./Pages";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="find-a-job" element={<Jobs />} />
+        <Route path="detail" element={<JobDetail />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="category" element={<Category />} />

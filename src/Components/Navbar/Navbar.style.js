@@ -23,11 +23,11 @@ export const NavbarContainer = styled.section`
   .navbar-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
   }
   .logo-container {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: relative;
     border-radius: 50%;
     overflow: hidden;

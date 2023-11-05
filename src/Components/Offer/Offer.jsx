@@ -4,6 +4,7 @@ import { Card2 } from "../../Components";
 import { OfferData } from "../DummyData";
 
 const Offer = () => {
+  const OfferToDisplay = OfferData.slice(0, 4);
   return (
     <OfferContainer>
       <section className="offer-top">
@@ -36,12 +37,11 @@ const Offer = () => {
         </div>
         <div className="offer-bottom-bottom">
           <div className="offer-data">
-          {OfferData.map((data) => (
-            <div key={data.id}  >
-              <Card2 {...data} />
-            </div>
-          ))}
-
+            {OfferToDisplay.map((data) => (
+              <div key={data.id} className="offer-data-one">
+                <Card2 {...data} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

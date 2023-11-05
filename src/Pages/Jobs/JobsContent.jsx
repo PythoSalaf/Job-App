@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Section } from './JobsContent.css'
-import { Pagination } from 'antd';
-import { OfferData } from '../../Components/DummyData';
+import { Section } from "./JobsContent.css";
+import { Pagination } from "antd";
+import { OfferData } from "../../Components/DummyData";
 import { FaLocationDot } from "react-icons/fa6";
 
 export const JobsContent = () => {
-
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemsPerPage = 5;
@@ -25,45 +24,39 @@ export const JobsContent = () => {
             <option value="option2">Job List</option>
             <option value="option3">Job List</option>
             <option value="option4">Job List</option>
-          </select>     
+          </select>
         </div>
       </section>
       <section className="jobCardContainer">
         {currentData.map((item) => (
           <div className="jobCard" key={item.id}>
             <div className="jobCardFirst">
-              <img 
-                className="jobImg"
-                src={item.avatar} 
-                alt={item.job}
-              />
+              <img className="jobImg" src={item.avatar} alt={item.job} />
             </div>
             <div className="jobCardSecond">
               <h3>{item.job}</h3>
               <p>{item.company}</p>
               <div className="jobCardLocation">
-                <FaLocationDot/>
+                <FaLocationDot />
                 <p>{item.location}</p>
               </div>
               <p>${item.salary}</p>
             </div>
             <div className="jobCardThird">
-              <button className="jobCardButton">
-                Full Time
-              </button>
+              <button className="jobCardButton">Full Time</button>
               <p>10 hours ago</p>
             </div>
           </div>
         ))}
       </section>
       <div className="pagination-container">
-        <Pagination 
+        <Pagination
           className="pagination"
-          defaultCurrent={1} 
+          defaultCurrent={1}
           total={500}
           onChange={(page) => setCurrentPage(page)}
         />
       </div>
     </Section>
-  )
-}
+  );
+};

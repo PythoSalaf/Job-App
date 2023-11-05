@@ -1,7 +1,8 @@
 import React from "react";
 import { StepContainer } from "./Steps.style";
-import { Card1 } from '../../Components'
+import { Card1 } from "../../Components";
 import { AlwaysData, StepData } from "../DummyData";
+import { help } from "../../Assets";
 
 const Steps = () => {
   return (
@@ -14,36 +15,32 @@ const Steps = () => {
       </div>
 
       <div className="step-middle">
-       <div className="step-data">
-        {
-            StepData.map((item) => (
-                <div key={item.id} >
-                     <Card1 {...item} />
-                </div>
-            ))
-        }
-       </div>
+        <div className="step-data">
+          {StepData.map((item) => (
+            <div key={item.id}>
+              <Card1 {...item} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="step-bottom">
-        <div className="step-bottom-left"></div>
+        <div className="step-bottom-left">
+          <img src={help} alt="step-icon" />
+        </div>
         <div className="step-bottom-right">
-            <h3 className="step-bottom-tittle">We always help you with !</h3>
-            <div className="step-bottom-container">
-                {
-                    AlwaysData.map((data) => (
-                        <div className="always-data-container" key={data.id}  >
-                            <div className="always-avatar">
-                                {data.avatar}
-                            </div>
-                            <div className="always-content">
-                                <h3>{data.content}</h3>
-                                <p>{data.text}</p>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
+          <h3 className="step-bottom-tittle">We always help you with !</h3>
+          <div className="step-bottom-container">
+            {AlwaysData.map((data) => (
+              <div className="always-data-container" key={data.id}>
+                <div className="always-avatar">{data.avatar}</div>
+                <div className="always-content">
+                  <h3>{data.content}</h3>
+                  <p>{data.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </StepContainer>
