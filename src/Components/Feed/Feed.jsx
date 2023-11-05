@@ -1,6 +1,7 @@
 import React from "react";
 import { FeedContainer } from "./Feed.style";
 import { feed } from "../../Assets";
+import { Swipper } from "../../Components";
 
 const Feed = () => {
   return (
@@ -16,8 +17,8 @@ const Feed = () => {
             Over 10,000+ people registered <br /> in our website
           </h2>
           <p className="feed-one-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <br /> Error, sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            sunt?
           </p>
           <button className="feed-one-btn">explore more</button>
         </div>
@@ -27,8 +28,13 @@ const Feed = () => {
         <div className="feed-two-top">
           <h2 className="feed-two-title">What a job holder says about us</h2>
           <p className="feed-two-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing <br/> elit. Ut modi corrupti illo.
+            Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Ut
+            modi corrupti illo.
           </p>
+        </div>
+
+        <div className="feed-two-bottom">
+          <Swipper />
         </div>
       </section>
     </FeedContainer>

@@ -24,7 +24,6 @@ export const FeedContainer = styled.section`
     justify-content: center;
     background-color: #ededed;
     border-radius: 15px;
-
   }
 
   .feed-one-left-container img {
@@ -45,7 +44,7 @@ export const FeedContainer = styled.section`
   .feed-one-title {
     font-size: 28px;
     font-weight: 600;
-   line-height: 40px;
+    line-height: 40px;
     text-transform: capitalize;
     margin: 0 0 1.2rem;
   }
@@ -66,8 +65,8 @@ export const FeedContainer = styled.section`
     color: var(--White-color);
     border-radius: 10px;
     border: none;
+    text-transform: capitalize;
   }
-
 
   .feed-two {
     margin: 8rem auto 0;
@@ -93,5 +92,76 @@ export const FeedContainer = styled.section`
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
+  }
+
+  .feed-two-bottom {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 2rem auto 0;
+    .feed-one {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .feed-one-title {
+      font-size: 24px;
+      text-align: center;
+      line-height: 32px;
+      margin: 0 0 1rem;
+    }
+
+    .feed-one-text {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .feed-one-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: var(--Primary-color);
+      color: var(--White-color);
+      border-radius: 10px;
+      border: none;
+      text-transform: capitalize;
+    }
+
+    .feed-one-right {
+      width: 98%;
+      margin: 2rem auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .feed-two-title {
+      font-size: 22px;
+      margin: 0 0 1rem;
+    }
+
+    .feed-two-text {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    .feed-two-bottom {
+      width: 98%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .feed-one-title {
+      font-size: 22px;
+    }
+
+    .feed-one-text {
+      font-size: 16px;
+    }
   }
 `;

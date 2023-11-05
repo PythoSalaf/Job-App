@@ -10,8 +10,25 @@ body {
   scroll-behavior: smooth;
 }
 
-
 :root {
   --Primary-color: #408bdc;
   --White-color: #fff;
+}
+
+.swiper-wrapper {
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-container {
+    display: flex;
+    justify-content: center !important;
+  }
 }
