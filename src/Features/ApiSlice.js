@@ -9,10 +9,13 @@ const initialState = {
 
 // Async thunk to fetch data from the API
 export const fetchApi = createAsyncThunk("data/fetchCategory", async () => {
-  const response = await axios.get("https://remotive.com/api/remote-jobs?");
-  console.log("Response", response.data.jobs);
-
-  return response.data;
+  try{
+    const response = await axios.get("https://remotive.com/api/remote-jobs?");
+    // console.log("Response", response.data.jobs);
+    return response.data;
+  } catch (error) {
+    throw error; // Rethrow the error for rejection handling
+  } 
 });
 
 const apiSlice = createSlice({
@@ -30,10 +33,11 @@ const apiSlice = createSlice({
       })
       .addCase(fetchApi.fulfilled, (state, { payload }) => {
         state.apiData = payload;
-        state.status = "idle";
+        state.status = "suceeded";
       })
-      .addCase(fetchApi.rejected, (state, { payload }) => {
-        state.error = payload;
+      .addCase(fetchApi.rejected, (state, { error }) => {
+        state.error = error.message;
+        state.status = "rejected";
       });
   },
 });

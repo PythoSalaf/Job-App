@@ -4,6 +4,7 @@ import { Navbar, ErrorPage, Footer } from "./Components";
 import { About, Home, Jobs, Contact, Category, JobDetail } from "./Pages";
 
 const App = () => {
+  
   return (
     <>
       <Navbar />

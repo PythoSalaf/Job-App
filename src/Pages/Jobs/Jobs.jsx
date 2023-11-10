@@ -1,13 +1,36 @@
 import React from 'react'
 import styled from "styled-components";
+import { useState } from 'react';
 import { JobsSideBar } from './JobsSideBar';
 import { JobsContent } from './JobsContent';
 
 const Jobs = () => {
+  const [totalJobs, setTotalJobs] = useState(0);
+  const [filteredJobs, setFilteredJobs] = useState([]);
+  const [filterCriteria, setFilterCriteria] = useState({
+    selectedCategory: '',
+    selectedJobTypes: [],
+    selectedLocation: '',
+    filterPrice: [0, 100],
+  });
+  const updateFilteredJobs = (filteredJobs) => {
+    setFilteredJobs(filteredJobs);
+  };
+  const updateTotalJobs = (totalJobs) => {
+    setTotalJobs(totalJobs);
+  };
   return (
     <Section>
-      <JobsSideBar/>
-      <JobsContent/>
+      <JobsSideBar
+        updateFilteredJobs={updateFilteredJobs}
+        filterCriteria={filterCriteria}
+        setFilterCriteria={setFilterCriteria}
+        updateTotalJobs={updateTotalJobs}
+      />
+      <JobsContent
+        filteredJobs={filteredJobs}
+        totalJobs={totalJobs}
+      />
     </Section>
   )
 }

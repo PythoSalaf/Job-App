@@ -5,14 +5,19 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { store } from "./Store/store";
 import { Provider } from "react-redux";
+import { ScrollToTop } from "./Features/ScrollToTop";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App />
+        <ScrollToTop/>
+        <App />  
       </Router>
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode> 
 );
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
