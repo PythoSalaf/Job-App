@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Section = styled.section`
   width: 75%;
   height:max-height;
-  background-color:#F4F4F4;
+  background-color:White;
   .top{
     margin: 50px 50px 50px 50px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:var(--Primary-color);
+    background-color: var(--White-color);
   }
   .topRight{
     display: flex;
@@ -27,7 +28,7 @@ export const Section = styled.section`
   }
   .jobCardContainer{
     background-color:var(--White-color);
-    padding:50px;
+    padding:0 50px 50px 50px;
     display: grid;
     grid-gap:50px;
   }
@@ -38,7 +39,7 @@ export const Section = styled.section`
     height:150px;
     justify-self: center;
     padding:20px;
-    background-color:#F4F4F4;
+    background-color:var(--White-color);
     border-radius:5px;
     box-shadow: 4px 4px 4px 4px #2323231F;
   }
@@ -138,9 +139,16 @@ export const Section = styled.section`
     width: 100%;
     .top{
       font-size:0.6em;
+      height: 50px;
+      padding:10px 0 0 20px;
+      margin:0;
+    }
+    .jobCard{
+      padding:0 0 0 40px;
     }
     .jobCardContainer{
-      padding:50px 30px;
+      padding:10px 20px 0 20px;
+      margin-bottom:20px;
     }
     .jobCardSecond>h3{
       font-size:1em;

@@ -34,6 +34,7 @@ export const JobsSideBarContainer = styled.section`
             cursor: pointer;
             user-select: none;
             padding-left: 25px;
+            // margin-bottom:10px;
         }  
         .custom-checkbox input {
             position: absolute;
@@ -66,8 +67,18 @@ export const JobsSideBarContainer = styled.section`
             transform: rotate(45deg);
         }         
     }
+    .applyFilter{
+        width: 50%;
+        height: 50px;
+        align-self: center;
+        background-color:var(--White-color);
+        border:none;
+    }
     @media screen and (max-width: 768px) {
         width: 30%;
+        .applyFilter{
+            margin:0 0 30px 0;
+        }
     }
     @media screen and (max-width: 426px) {
         width: 100%;
